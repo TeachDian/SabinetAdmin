@@ -142,6 +142,13 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-shop.html">
+          <i class="bi bi-shop"></i>
+          <span>Shop</span>
+        </a>
+      </li><!-- End Shopping Page Nav -->
+
+      <li class="nav-item">
         <a class="nav-link collapsed" href="pages-faq.html">
           <i class="bi bi-question-circle"></i>
           <span>F.A.Q</span>
@@ -156,32 +163,34 @@
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-groupmates.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Groupmates</span>
+        </a>
+      </li><!-- End Blank Page Nav -->
+
+      <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="pages-register.html">
           <i class="bi bi-card-list"></i>
           <span>Register</span>
         </a>
-      </li><!-- End Register Page Nav -->
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-login.html">
           <i class="bi bi-box-arrow-in-right"></i>
           <span>Login</span>
         </a>
-      </li><!-- End Login Page Nav -->
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-error-404.html">
           <i class="bi bi-dash-circle"></i>
           <span>Error 404</span>
         </a>
-      </li><!-- End Error 404 Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
-          <i class="bi bi-file-earmark"></i>
-          <span>Groupmates</span>
-        </a>
-      </li><!-- End Blank Page Nav -->
+      </li> -->
+      
+      
 
     </ul>
 
@@ -211,46 +220,19 @@
               <h2>John Philip Sabinet</h2>
               <h3>Web Designer</h3>
               <div class="social-links mt-2">
-                <a href="#"  class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="https://facebook.com/philip.sabinet0924/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://instagram.com/_dianphilip/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/john-philip-sabinet-51b979238/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="pages-error-404.html" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://facebook.com/philip.sabinet0924/" target="_blank" class="facebook"><i
+                    class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com/_dianphilip/" target="_blank" class="instagram"><i
+                    class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/john-philip-sabinet-51b979238/" target="_blank" class="linkedin"><i
+                    class="bi bi-linkedin"></i></a>
                 <a href="https://github.com/TeachDian/" target="_blank" class="github"><i class="bi bi-github"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
-
-              <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-              <h2>John Philip Sabinet</h2>
-              <h3>Web Designer</h3>
-              <div class="social-links mt-2">
-                <a href="#"  class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="https://facebook.com/philip.sabinet0924/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://instagram.com/_dianphilip/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/john-philip-sabinet-51b979238/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/TeachDian/" target="_blank" class="github"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
-
-              <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-              <h2>John Philip Sabinet</h2>
-              <h3>Web Designer</h3>
-              <div class="social-links mt-2">
-                <a href="#"  class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="https://facebook.com/philip.sabinet0924/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://instagram.com/_dianphilip/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/john-philip-sabinet-51b979238/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/TeachDian/" target="_blank" class="github"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-          </div>
+         
 
         </div>
 
@@ -295,7 +277,8 @@
 
                     I am constantly staying up-to-date with the latest trends and advancements in web development,
                     allowing me to deliver cutting-edge solutions to my clients. From responsive design to search engine
-                    optimization, I have a comprehensive understanding of what it takes to build a successful website.<br><br>
+                    optimization, I have a comprehensive understanding of what it takes to build a successful
+                    website.<br><br>
 
                     If you're looking for a web developer who is committed to delivering exceptional results and
                     providing top-notch customer service, then look no further. Let's work together to create a website
@@ -349,8 +332,12 @@
                       <div class="col-md-8 col-lg-9">
                         <img src="assets/img/profile-img.jpg" alt="Profile">
                         <div class="pt-2">
-                          <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i
-                              class="bi bi-upload"></i></a>
+                          <form action="upload.php" method="post" enctype="multipart/form-data">
+                                <input title="Choose file" type="file" name="fileToUpload" id="fileToUpload">
+                                <input title="Upload" type="submit" value="Upload" name="submit">
+                                <!-- <a href="#" class="btn btn-primary dropdown btn-sm" title="Upload new profile image">
+                                  <i class="bi bi-upload"></i></a> -->
+                          </form>
                           <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i
                               class="bi bi-trash"></i></a>
                         </div>
@@ -368,15 +355,15 @@
                     <div class="row mb-3">
                       <label for="about" class="col-md-4 col-lg-3 col-form-label">About</label>
                       <div class="col-md-8 col-lg-9">
-                        <textarea name="about" class="form-control" id="about" style="height: 100px">As a web developer, I am passionate about creating innovative and functional websites that provide exceptional user experiences. With years of experience in the industry, I have honed my skills in a variety of web technologies, including HTML, CSS, JavaScript, and PHP. My approach to web development involves a deep understanding of the client's needs, goals, and target audience. I work closely with my clients to ensure that their website accurately represents their brand and meets their business objectives. I am constantly staying up-to-date with the latest trends and advancements in web development, allowing me to deliver cutting-edge solutions to my clients. From responsive design to search engine optimization, I have a comprehensive understanding of what it takes to build a successful website. If you're looking for a web developer who is committed to delivering exceptional results and providing top-notch customer service, then look no further. Let's work together to create a website that exceeds your expectations and drives your business forward.</textarea>
+                        <textarea name="about" class="form-control" id="about"
+                          style="height: 100px">As a web developer, I am passionate about creating innovative and functional websites that provide exceptional user experiences. With years of experience in the industry, I have honed my skills in a variety of web technologies, including HTML, CSS, JavaScript, and PHP. My approach to web development involves a deep understanding of the client's needs, goals, and target audience. I work closely with my clients to ensure that their website accurately represents their brand and meets their business objectives. I am constantly staying up-to-date with the latest trends and advancements in web development, allowing me to deliver cutting-edge solutions to my clients. From responsive design to search engine optimization, I have a comprehensive understanding of what it takes to build a successful website. If you're looking for a web developer who is committed to delivering exceptional results and providing top-notch customer service, then look no further. Let's work together to create a website that exceeds your expectations and drives your business forward.</textarea>
                       </div>
                     </div>
 
                     <div class="row mb-3">
                       <label for="company" class="col-md-4 col-lg-3 col-form-label">Company</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="company" type="text" class="form-control" id="company"
-                          value="Sabinet Admin">
+                        <input name="company" type="text" class="form-control" id="company" value="Sabinet Admin">
                       </div>
                     </div>
 
